@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e4f9e5b.css",
-    "main.js": "/static/js/main.ce070074.js",
-    "static/js/787.5d51c99d.chunk.js": "/static/js/787.5d51c99d.chunk.js",
-    "static/media/stock_image003.jpg": "/static/media/stock_image003.6ee739ad69a3c4c279e5.jpg",
-    "static/media/stock_image006.jpg": "/static/media/stock_image006.e1b14b108c417e8dd15a.jpg",
-    "static/media/logo-no-background.svg": "/static/media/logo-no-background.37563b9da19f7224a85c6cae903e23c3.svg",
-    "static/media/service.png": "/static/media/service.d1c1d30dd9f78337a3ae.png",
-    "static/media/customer-service.png": "/static/media/customer-service.e842e96da93840e2f278.png",
-    "static/media/economy.png": "/static/media/economy.89acae8044205c61a121.png",
-    "static/media/icon-transparent.png": "/static/media/icon-transparent.d19d88bc5c637e3ae83b.png",
-    "static/media/icon-trustworthy.png": "/static/media/icon-trustworthy.c8ad5dd2af07500661b0.png",
-    "static/media/phone-receiver.png": "/static/media/phone-receiver.7fc8853262a4e0e20d3b.png",
-    "static/media/translate.png": "/static/media/translate.2127d3d9e5a7a8611df2.png",
-    "static/media/icon-honesty.png": "/static/media/icon-honesty.985527aca4980a5aaa94.png",
-    "index.html": "/index.html",
-    "main.1e4f9e5b.css.map": "/static/css/main.1e4f9e5b.css.map",
-    "main.ce070074.js.map": "/static/js/main.ce070074.js.map",
-    "787.5d51c99d.chunk.js.map": "/static/js/787.5d51c99d.chunk.js.map"
+    "main.css": "/commfidencegroup/static/css/main.1e4f9e5b.css",
+    "main.js": "/commfidencegroup/static/js/main.39e0f35f.js",
+    "static/js/787.5d51c99d.chunk.js": "/commfidencegroup/static/js/787.5d51c99d.chunk.js",
+    "static/media/stock_image003.jpg": "/commfidencegroup/static/media/stock_image003.6ee739ad69a3c4c279e5.jpg",
+    "static/media/stock_image006.jpg": "/commfidencegroup/static/media/stock_image006.e1b14b108c417e8dd15a.jpg",
+    "static/media/logo-no-background.svg": "/commfidencegroup/static/media/logo-no-background.37563b9da19f7224a85c6cae903e23c3.svg",
+    "static/media/service.png": "/commfidencegroup/static/media/service.d1c1d30dd9f78337a3ae.png",
+    "static/media/customer-service.png": "/commfidencegroup/static/media/customer-service.e842e96da93840e2f278.png",
+    "static/media/economy.png": "/commfidencegroup/static/media/economy.89acae8044205c61a121.png",
+    "static/media/icon-transparent.png": "/commfidencegroup/static/media/icon-transparent.d19d88bc5c637e3ae83b.png",
+    "static/media/icon-trustworthy.png": "/commfidencegroup/static/media/icon-trustworthy.c8ad5dd2af07500661b0.png",
+    "static/media/phone-receiver.png": "/commfidencegroup/static/media/phone-receiver.7fc8853262a4e0e20d3b.png",
+    "static/media/translate.png": "/commfidencegroup/static/media/translate.2127d3d9e5a7a8611df2.png",
+    "static/media/icon-honesty.png": "/commfidencegroup/static/media/icon-honesty.985527aca4980a5aaa94.png",
+    "index.html": "/commfidencegroup/index.html",
+    "main.1e4f9e5b.css.map": "/commfidencegroup/static/css/main.1e4f9e5b.css.map",
+    "main.39e0f35f.js.map": "/commfidencegroup/static/js/main.39e0f35f.js.map",
+    "787.5d51c99d.chunk.js.map": "/commfidencegroup/static/js/787.5d51c99d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e4f9e5b.css",
-    "static/js/main.ce070074.js"
+    "static/js/main.39e0f35f.js"
   ]
 }
