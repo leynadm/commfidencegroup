@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="commfidencegroup">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -62,19 +62,32 @@ section {
 }
 
 .activity-title{
-    color: black;
+    color: #010C80;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
 }
-
-.activity-content-wrapper{
+ 
+.activity-content-wrapper {
+    position: relative;
     display: flex;
-    gap: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    gap: 1rem;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 10px 10px rgba(1,12,128,1);
+    transition: all .4s ease;
+   
 }
+  .activity-content-wrapper:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+  }
+   
+
 
 .activity-top-wrapper{
     display: flex;
@@ -101,6 +114,7 @@ section {
 
 .activity-description{
     font-size: 1.25rem;
+    color: black;
 }
 
 .point-wrapper {
@@ -133,6 +147,18 @@ section {
 .statement-section-text span{
     font-size: 3.25rem;
     color: black;
+}
+
+.contact-section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section-text{
+    font-size: 2rem;
 }
 
 .home-contact-us-btn {
@@ -249,6 +275,24 @@ section {
         max-width: 75%;
         height: auto;
         box-shadow: -50px -50px 0 -40px black, 50px 50px 0 -40px #010C80;
+    }
+
+    .activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .activity-content-wrapper{
+        min-height: 16rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .statement-section{
+        height: auto;
     }
 
 }
