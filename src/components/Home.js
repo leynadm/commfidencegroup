@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/Home.css";
-import img006 from "../images/stock_image006.jpg";
+import img010 from "../images/stock_image010.jpg";
 import img003 from "../images/stock_image003.jpg";
 import serviceIcon from "../images/service.png";
 import economyIcon from "../images/economy.png";
@@ -61,8 +61,7 @@ function Home() {
             <div className="activity-content-wrapper">
               <div className="activity-description">
                 Looking for exceptional customer service that speaks your
-                language?<br></br>
-                We offer Multilingual Support to fulfill your customer's needs.
+                language? We offer Multilingual Support to fulfill your customer's needs.
               </div>
             </div>
           </div>
@@ -156,7 +155,7 @@ function Home() {
       <section className="section-two">
         <img
           className="section-two-image style-image"
-          src={img006}
+          src={img010}
           alt="call center agents speaking"
         />
         <div className="section-two-main-text">

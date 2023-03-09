@@ -39,13 +39,27 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 1rem;
-    background-color: 			#F0FFFF;
+    background-color: #F0FFFF;
 }
 
+ 
 .section-two-main-text {
     color: black;
     text-align: center;
+    padding: 1rem;
+} 
+
+.section-two-main-text-two{
+    text-align: center;
+    padding: 1rem;
+    background-color: #0096FF;
+    border-top-left-radius: 40%;
+    border-end-end-radius: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 99%;
 }
+
+
 
 .section-two-image {
     width: 85%;
@@ -55,6 +69,7 @@ section {
 .section-three {
     height: auto;
     display: grid;
+    padding: 1rem;
 }
 
 .activity{
@@ -115,6 +130,7 @@ section {
 .activity-description{
     font-size: 1.25rem;
     color: black;
+    font-weight: 100;
 }
 
 .point-wrapper {
@@ -289,10 +305,19 @@ section {
         align-items: center;
     }
 
-
-
     .statement-section{
         height: auto;
     }
-
+    
+    .statement-section-text{
+        font-size: 3rem;
+        padding: 2rem;
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    
+    .statement-section-text span{
+        font-size: 3.25rem;
+        color: black;
+    }
 }
