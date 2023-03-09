@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/commfidencegroup/static/css/main.7b19a35a.css",
-    "main.js": "/commfidencegroup/static/js/main.2b85de48.js",
+    "main.css": "/commfidencegroup/static/css/main.1111da01.css",
+    "main.js": "/commfidencegroup/static/js/main.411faf6a.js",
     "static/js/787.5d51c99d.chunk.js": "/commfidencegroup/static/js/787.5d51c99d.chunk.js",
     "static/media/stock_image003.jpg": "/commfidencegroup/static/media/stock_image003.6ee739ad69a3c4c279e5.jpg",
-    "static/media/stock_image006.jpg": "/commfidencegroup/static/media/stock_image006.e1b14b108c417e8dd15a.jpg",
+    "static/media/stock_image010.jpg": "/commfidencegroup/static/media/stock_image010.6895ab8907dfbb73828d.jpg",
     "static/media/logo-no-background.svg": "/commfidencegroup/static/media/logo-no-background.37563b9da19f7224a85c6cae903e23c3.svg",
     "static/media/service.png": "/commfidencegroup/static/media/service.d1c1d30dd9f78337a3ae.png",
     "static/media/customer-service.png": "/commfidencegroup/static/media/customer-service.e842e96da93840e2f278.png",
@@ -12,12 +12,12 @@
     "static/media/phone-receiver.png": "/commfidencegroup/static/media/phone-receiver.7fc8853262a4e0e20d3b.png",
     "static/media/translate.png": "/commfidencegroup/static/media/translate.2127d3d9e5a7a8611df2.png",
     "index.html": "/commfidencegroup/index.html",
-    "main.7b19a35a.css.map": "/commfidencegroup/static/css/main.7b19a35a.css.map",
-    "main.2b85de48.js.map": "/commfidencegroup/static/js/main.2b85de48.js.map",
+    "main.1111da01.css.map": "/commfidencegroup/static/css/main.1111da01.css.map",
+    "main.411faf6a.js.map": "/commfidencegroup/static/js/main.411faf6a.js.map",
     "787.5d51c99d.chunk.js.map": "/commfidencegroup/static/js/787.5d51c99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b19a35a.css",
-    "static/js/main.2b85de48.js"
+    "static/css/main.1111da01.css",
+    "static/js/main.411faf6a.js"
   ]
 }
