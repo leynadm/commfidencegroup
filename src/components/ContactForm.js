@@ -31,30 +31,29 @@ function ContactForm() {
 
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <div className="group">
-          <input className="form-field" type="text" name="user_name" />
+          <input className="form-field" type="text" name="user_name" required/>
           <span className="highlight"></span>
           <span className="bar"></span>
           <label>Your Name</label>
         </div>
 
         <div className="group">
-          <input className="form-field" type="text" name="company_name" />
+          <input className="form-field" type="text" name="company_name" required />
           <span className="highlight"></span>
           <span className="bar"></span>
           <label>Your Company's Name</label>
         </div>
 
         <div className="group">
-          <input className="form-field" type="email" name="user_email" />
+          <input className="form-field" type="email" name="user_email" required />
           <span className="highlight"></span>
           <span className="bar"></span>
           <label>Your Email</label>
         </div>
         <div className="group">
-          <textarea className="form-field" name="message" />
+          <textarea className="form-field" name="message" required placeholder="Tell us what you're interested in..." />
           <span className="highlight"></span>
-          <span className="bar"></span>
-          <label>Tell us what are you interested in...</label>  
+          <span className="bar"></span>  
         </div>
         <input className="submit-btn" type="submit" className="submit-btn" value="Send Message" />
       </form>

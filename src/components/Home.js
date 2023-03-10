@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
 import img010 from "../images/stock_image010.jpg";
 import img003 from "../images/stock_image003.jpg";
@@ -8,22 +8,36 @@ import phoneReceiverIcon from "../images/phone-receiver.png";
 import translateIcon from "../images/translate.png";
 import customerServiceIcon from "../images/customer-service.png";
 import ContactForm from "./ContactForm";
-import { motion } from "framer-motion";
-
-import aos from "aos";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Home() {
-  useEffect(() => {
-    aos.init({ duration: 1000 });
-  }, []);
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation()
+
+  useEffect(()=>{
+
+    console.log("use effect hook, inView = ",inView)
+  
+    if(inView){
+      animation.start({
+        x:0,
+        transition:{
+          type:'spring', duration:1, bounce:0.3
+        }
+      })
+    }
+
+    if(!inView){
+      animation.start({x:'-100vw'})
+    }
+  },[inView])
 
   return (
     <div className="content">
       <section className="section-one">
-        <motion.div 
-
-
-        className="section-one-main-text text">
+        <motion.div className="section-one-main-text text">
           Do business<br></br> with<br></br> confidence.
         </motion.div>
 
@@ -33,12 +47,13 @@ function Home() {
           using state-of-the-art technology
         </div>
 
-        <motion.button 
-            initial={{ opacity: 0, scale: 0.25 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.15 }}
-
-          className="home-contact-us-btn" type="button">
+        <motion.button
+          initial={{ opacity: 0, scale: 0.25 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.15 }}
+          className="home-contact-us-btn"
+          type="button"
+        >
           Contact Us
         </motion.button>
       </section>
@@ -46,8 +61,11 @@ function Home() {
       <section className="section-three">
         <div className="activity-section-title">This is what we do...</div>
 
-        <div className="activities">
-          <div className="activity">
+        <div ref={ref} className="activities">
+          <motion.div
+            className="activity"
+            animate={animation}
+          >
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Multilingual<br></br>Support
@@ -61,12 +79,15 @@ function Home() {
             <div className="activity-content-wrapper">
               <div className="activity-description">
                 Looking for exceptional customer service that speaks your
-                language? We offer Multilingual Support to fulfill your customer's needs.
+                language? We offer Multilingual Support to fulfill your
+                customer's needs.
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="activity">
+          <motion.div className="activity"
+            animate={animation}
+            >
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Outbound<br></br>Calling
@@ -86,9 +107,12 @@ function Home() {
                 out of your brand and products.
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="activity">
+          <motion.div className="activity"
+          animate={animation}
+          >
+          
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Sales and<br></br>Marketing
@@ -107,9 +131,12 @@ function Home() {
                 and upselling to boost your experience.
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="activity">
+          <motion.div className="activity"
+          animate={animation}
+          >
+          
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Technical<br></br>Service
@@ -127,9 +154,12 @@ function Home() {
                 helping you resolve any issues quickly and effectively.
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="activity">
+          <motion.div className="activity"
+          animate={animation}
+          >
+          
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Customer<br></br>Service
@@ -148,7 +178,7 @@ function Home() {
                 best experience with your business every step of the way.
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -183,7 +213,6 @@ function Home() {
       </section>
 
       <section className="contact-section">
-
         <div className="contact-section-text">Contact Us</div>
         <ContactForm />
       </section>
