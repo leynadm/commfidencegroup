@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/commfidencegroup/static/css/main.1111da01.css",
-    "main.js": "/commfidencegroup/static/js/main.411faf6a.js",
+    "main.css": "/commfidencegroup/static/css/main.8deea6b8.css",
+    "main.js": "/commfidencegroup/static/js/main.4d2d9cca.js",
     "static/js/787.5d51c99d.chunk.js": "/commfidencegroup/static/js/787.5d51c99d.chunk.js",
     "static/media/stock_image003.jpg": "/commfidencegroup/static/media/stock_image003.6ee739ad69a3c4c279e5.jpg",
     "static/media/stock_image010.jpg": "/commfidencegroup/static/media/stock_image010.6895ab8907dfbb73828d.jpg",
@@ -12,12 +12,12 @@
     "static/media/phone-receiver.png": "/commfidencegroup/static/media/phone-receiver.7fc8853262a4e0e20d3b.png",
     "static/media/translate.png": "/commfidencegroup/static/media/translate.2127d3d9e5a7a8611df2.png",
     "index.html": "/commfidencegroup/index.html",
-    "main.1111da01.css.map": "/commfidencegroup/static/css/main.1111da01.css.map",
-    "main.411faf6a.js.map": "/commfidencegroup/static/js/main.411faf6a.js.map",
+    "main.8deea6b8.css.map": "/commfidencegroup/static/css/main.8deea6b8.css.map",
+    "main.4d2d9cca.js.map": "/commfidencegroup/static/js/main.4d2d9cca.js.map",
     "787.5d51c99d.chunk.js.map": "/commfidencegroup/static/js/787.5d51c99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1111da01.css",
-    "static/js/main.411faf6a.js"
+    "static/css/main.8deea6b8.css",
+    "static/js/main.4d2d9cca.js"
   ]
 }
