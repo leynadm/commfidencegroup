@@ -13,7 +13,7 @@
 .services-section-one{
     height: auto;
     display: flex;
-    justify-content: start;
+    justify-content:flex-start
 }
 
 .info-wrapper {
