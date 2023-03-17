@@ -20,16 +20,16 @@ function Navbar() {
         </div>
         <nav ref={navRef}>
           <Link to="/">
-            <a href="/#">Home</a>
+            Home
           </Link>
           <Link to="/services">
-            <a href="/#">Services</a>
+            Services
           </Link>
           <Link to="about">
-            <a href="/#">About</a>
+            About
           </Link>
           <Link to="contact">
-            <a href="/#">Contact</a>
+            Contact
           </Link>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
