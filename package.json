@@ -1,7 +1,7 @@
 {
   "name": "commfidencegroup",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://commfidencegroup.com",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
