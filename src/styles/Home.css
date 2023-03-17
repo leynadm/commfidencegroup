@@ -130,7 +130,7 @@ section {
 .activity-description{
     font-size: 1.25rem;
     color: black;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .point-wrapper {
@@ -267,7 +267,7 @@ section {
 }
 
 /* Large screens (900px and up) */
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width:1023px) {
 
     .section-one-main-text {
         font-size: 5rem;
@@ -321,3 +321,64 @@ section {
         color: black;
     }
 }
+
+/* Desktops screens (1024px and up) */
+@media (min-width: 1024px) {
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    section{
+        grid-column: 2/3;
+    }
+
+    .section-one-main-text {
+        font-size: 5rem;
+    }
+
+
+    .section-one-statement-text {
+        font-size: 3.5rem;
+    }
+
+    .home-contact-us-btn {
+        font-size: 2.5rem;
+    }
+
+    .activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .activity-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .activity-description{
+        min-height: 20rem;
+    }
+
+
+    .section-one-statement-text {
+        font-size: 2rem;
+    }
+
+    .section-two-main-text {
+
+        font-size: 3rem;
+    }
+
+    .statement-section{
+        height: auto;
+        padding: 1rem;
+    }
+
+}
+

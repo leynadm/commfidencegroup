@@ -2,7 +2,7 @@
   "name": "commfidencegroup",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://leynadm.github.io/commfidencegroup",
+  "homepage": "https://commfidencegroup.com",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",

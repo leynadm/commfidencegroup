@@ -157,7 +157,7 @@ textarea{
     --s: .45em;
 
     --color: #000;
-
+    font-family: 'Lato',sans-serif;
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
@@ -166,7 +166,7 @@ textarea{
     transition: .3s linear, color 0s, background-color 0s;
     outline: var(--b) solid #0000;
     outline-offset: .6em;
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     border: 0;
 

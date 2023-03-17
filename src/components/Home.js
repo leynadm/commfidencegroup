@@ -7,40 +7,43 @@ import economyIcon from "../images/economy.png";
 import phoneReceiverIcon from "../images/phone-receiver.png";
 import translateIcon from "../images/translate.png";
 import customerServiceIcon from "../images/customer-service.png";
+import surveysAndMarketIcon from "../images/completed-task.png";
 import ContactForm from "./ContactForm";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function Home() {
   const { ref, inView } = useInView();
 
-  const animation = useAnimation()
+  const animation = useAnimation();
 
-  useEffect(()=>{
+  useEffect(() => {
+    console.log("use effect hook, inView = ", inView);
 
-    console.log("use effect hook, inView = ",inView)
-  
-    if(inView){
+    if (inView) {
       animation.start({
-        x:0,
-        transition:{
-          type:'spring', duration:1, bounce:0.3
-        }
-      })
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
     }
 
-    if(!inView){
-      animation.start({x:'-100vw'})
+    if (!inView) {
+      animation.start({ x: "-100vw" });
     }
-  },[inView])
+  }, [inView]);
 
   return (
     <div className="content">
       <section className="section-one">
-        <motion.div className="section-one-main-text text">
+        <motion.div className="section-one-main-text">
           Do business<br></br> with<br></br> confidence.
         </motion.div>
 
+        {/*Do business<br></br> with<br></br> confidence.*/}
         <div className="section-one-statement-text text">
           We help companies grow<br></br>
           by providing exceptional customer service,<br></br>
@@ -62,10 +65,7 @@ function Home() {
         <div className="activity-section-title">This is what we do...</div>
 
         <div ref={ref} className="activities">
-          <motion.div
-            className="activity"
-            animate={animation}
-          >
+          <motion.div className="activity" animate={animation}>
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Multilingual<br></br>Support
@@ -85,9 +85,7 @@ function Home() {
             </div>
           </motion.div>
 
-          <motion.div className="activity"
-            animate={animation}
-            >
+          <motion.div className="activity" animate={animation}>
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Outbound<br></br>Calling
@@ -109,10 +107,7 @@ function Home() {
             </div>
           </motion.div>
 
-          <motion.div className="activity"
-          animate={animation}
-          >
-          
+          <motion.div className="activity" animate={animation}>
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Sales and<br></br>Marketing
@@ -133,10 +128,7 @@ function Home() {
             </div>
           </motion.div>
 
-          <motion.div className="activity"
-          animate={animation}
-          >
-          
+          <motion.div className="activity" animate={animation}>
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Technical<br></br>Service
@@ -156,10 +148,7 @@ function Home() {
             </div>
           </motion.div>
 
-          <motion.div className="activity"
-          animate={animation}
-          >
-          
+          <motion.div className="activity" animate={animation}>
             <div className="activity-top-wrapper">
               <div className="activity-title">
                 Customer<br></br>Service
@@ -176,6 +165,28 @@ function Home() {
                 exceptional customer service. Our dedicated team is here to
                 support your customers around the clock, ensuring they have the
                 best experience with your business every step of the way.
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div className="activity" animate={animation}>
+            <div className="activity-top-wrapper">
+              <div className="activity-title">
+                Surveys &<br></br>Market Research
+              </div>
+              <img
+                className="activity-top-image"
+                src={surveysAndMarketIcon}
+                alt="survey and market research"
+              ></img>
+            </div>
+            <div className="activity-content-wrapper">
+              <div className="activity-description">
+                Get valuable insights and feedback from your customers with our
+                Surveys and Market Research service. Our experienced agents will
+                conduct phone surveys and research on behalf of your business,
+                gathering valuable data that can help you improve your products,
+                services, and overall customer experience.
               </div>
             </div>
           </motion.div>

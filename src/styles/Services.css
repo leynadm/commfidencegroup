@@ -1,0 +1,143 @@
+:root {
+  --red: tomato;
+  --bgColor: bisque;
+}
+
+.services-wrapper{
+    text-align: center;
+    height: calc(100vh - 10vh);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    padding: 1rem;
+}
+
+.header-image{
+    width: 25%;
+}
+
+.service-image{
+    width: 100%;
+    margin: 1rem;
+    padding: 0.25rem;
+    box-shadow:-10px -10px 0 -5px black,
+                10px 10px 0 -5px blue;
+}
+
+.services-text{
+    height: auto;
+    font-weight: 300;
+}
+
+.service-section-wrapper{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.service-section{
+    margin-top: 1rem;
+}
+
+.service-title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.services-header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.services-header-title{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.header-image{
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.25rem;
+    box-shadow:-10px -10px 0 -5px black,
+    10px 10px 0 -5px blue;
+
+}
+
+.services-header-title{
+    font-size: 1.5rem;
+}
+
+.services-header-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+
+/* Small screens (up to 599px) */
+@media (max-width: 599px) {
+
+}
+
+/* Medium screens (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+
+/* Large screens (900px and up) */
+@media (min-width: 900px) and (max-width:1023px) {
+
+}
+
+/* Desktops screens (1024px and up) */
+@media (min-width: 1024px) {
+
+    .services-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        text-align: center;
+    }
+    
+    .services-wrapper > * {
+        grid-column: 2/3;
+      }
+
+    .service-section-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-text{
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .service-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .services-header-title{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .services-header-text{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+}
+
