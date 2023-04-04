@@ -227,6 +227,33 @@ function Home() {
         <div className="contact-section-text">Contact Us</div>
         <ContactForm />
       </section>
+
+      <section className="address-section">
+        <div className="address-section-wrapper">
+          <div className="address-continent">OUR EASTERN EUROPE OFFICE</div>
+          <div className="address-county address-details">Hunedoara, Romania</div>
+          <div className="address-postalcode address-details">337327</div>
+          <div className="address-street address-details">Strada Principala 142</div>
+
+          <div className="address-section-wrapper address-section-inside-wrapper">
+          <div className="address-contact">REACH OUT TO US BY PHONE</div>
+          <div className="address-phone address-details">+40 754 427 097</div>
+        
+          <div className="address-section-wrapper address-section-inside-wrapper">
+          <div>REACH OUT TO OUR PARTNERS</div>
+          <a href="mailto: daniel@commfidencegroup.com">daniel@commfidencegroup.com</a><br></br> 
+          <a href="mailto: kelvin@commfidencegroup.com">kelvin@commfidencegroup.com</a> 
+
+        </div>
+
+        </div>        
+        
+        </div>
+
+
+
+        
+      </section>
     </div>
   );
 }
